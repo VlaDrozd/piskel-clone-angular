@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 200px;
+}
+
+.screenshot > img {
+  width: 400px;
+  height: auto;
+  color: #ffee00;
+  background-color: #333333;
+  border: 2px solid #ffee00;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0px;
+  border: 2px solid #ffee00;
+}
+
+li {
+  padding: 11px;
+}
+
+.editor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  font-size: 25px;
+  text-decoration: none;
+  border: 2px solid #ffee00;
+  color: #ffee00;
+  transition: all 0.3s;
+}
+
+.editor:hover {
+  background-color: #ffee00;
+  border: 2px solid #000000;
+  color: #000000;
+  font-weight: bold;
+}

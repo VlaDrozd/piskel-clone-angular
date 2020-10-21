@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="resize">
+    <span>Brush size: {{instrumentsService.brushSize}}</span>
+    <input [(ngModel)]="instrumentsService.brushSize" type="range" min="1" max="4" step="1" value="1">
+  </div>
+  <ul>
+    <li (click)="instrumentsService.setInstrument('pencil')"
+      [class.ordered]="instrumentsService.currentInstrument === 'pencil'">
+      Pencil
+    </li>
+    <li (click)="instrumentsService.setInstrument('paint-bucket')"
+      [class.ordered]="instrumentsService.currentInstrument === 'paint-bucket'">
+      Paint-Bucket
+    </li>
+    <li (click)="instrumentsService.setInstrument('eraser')"
+      [class.ordered]="instrumentsService.currentInstrument === 'eraser'">
+      Eraser
+    </li>
+    <li (click)="instrumentsService.setInstrument('stroke')"
+      [class.ordered]="instrumentsService.currentInstrument === 'stroke'">
+      Stroke
+    </li>
+    <li (click)="instrumentsService.setInstrument('color-picker')"
+      [class.ordered]="instrumentsService.currentInstrument === 'color-picker'">
+      Color-picker
+    </li>
+    <li (click)="instrumentsService.setInstrument('paint-all')"
+      [class.ordered]="instrumentsService.currentInstrument === 'paint-all'">
+      Paint all same colored
+    </li>
+  </ul>
+  <div class="palette">
+    <div class="main-color">
+      Main Color:<br>
+      <label [style.background-color]="instrumentsService.currentColor" for="color" class="color-label"></label>
+      <input id="color" name="color" class="color" [(ngModel)]="instrumentsService.currentColor" type="color"
+        value="#000000">
+    </div>
+    <div class="second-color">
+      Secondary Color:<br>
+      <label [style.background-color]="instrumentsService.secondColor" for="second-color" class="color-label"></label>
+      <input id="second-color" name="second-color" class="color" [(ngModel)]="instrumentsService.secondColor" type="color"
+        value="#000000">
+    </div>
+  </div>
+</div>
+<a class="shortcuts" routerLink="/shortcuts">Shortcuts</a>

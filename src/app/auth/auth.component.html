@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="button" *ngIf="!signedIn" (click)="signInWithGoogle()">LOG IN</div>
+  <div class="button" *ngIf="signedIn" (click)="signOut()">LOG OUT</div>
+  <div class="user" *ngIf="user">
+    <img class="avatar" src="{{ user.photoUrl }}">
+    <div>
+      <h4>{{ user.name }}</h4>
+    </div>
+  </div>
+</div>

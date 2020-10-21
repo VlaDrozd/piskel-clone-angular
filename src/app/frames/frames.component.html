@@ -1,0 +1,12 @@
+<div class="container">
+  <div *ngIf="!animation.resized" cdkDropList class="list" (cdkDropListDropped)="drop($event)">
+    <div class="box"[class.current]="i == animation.currentFrame"  *ngFor="let frame of animation.frames; let i = index" cdkDrag>
+      <div class="num">{{i+1}}.</div>
+      <div (click)="copy(i)" class="button copy">Copy</div>
+      <div (click)="delete(i)" class="button delete">Del</div>
+      <div class="custom-placeholder" *cdkDragPlaceholder></div>
+      <app-small-canvas (click)='changeCurrentFrame(i)' [imageData]=frame [size]='animation.size'></app-small-canvas>
+    </div>
+  </div>
+  <div (click)='addFrame()' class="add">Add frame</div>
+</div>

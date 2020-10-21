@@ -1,0 +1,12 @@
+<div class="container">
+  <canvas #canvas width="{{animation.size}}" height="{{animation.size}}">
+
+  </canvas>
+
+  <div class="resize">
+    <span>Animation speed: <span id="size_value">{{animation.speed}}</span> FPS</span>
+    <input [(ngModel)]="animation.speed" type="range" min="1" max="60" step="1" value="24">
+  </div>
+
+  <div (click)='animation.createGIF()' class="import">Import</div>
+</div>

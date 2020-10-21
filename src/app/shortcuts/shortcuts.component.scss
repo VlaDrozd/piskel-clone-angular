@@ -1,0 +1,35 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+li {
+  width: 200px;
+  padding: 5px;
+  color: #ffee00;
+  background-color: #333333;
+  border: 2px solid #ffee00;
+  cursor: pointer;
+}
+
+li + li {
+  margin-top: 5px;
+}
+
+.changing {
+  color: #e90000;
+  background-color: #333333;
+  border: 2px solid #e90000;
+}
+
+.back {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 200px;
+  padding: 5px;
+  color: #ffee00;
+  background-color: #333333;
+  border: 2px solid #ffee00;
+}

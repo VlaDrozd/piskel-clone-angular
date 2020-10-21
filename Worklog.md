@@ -1,0 +1,5 @@
+Dec 28 -> Dec 30: Base components (Canvas and instruments). ( 2 hours)
+Dec 30 -> Jan 04: Animation functionality (Frames, Animation itself). ( 5 hours )
+Jan 05: Save to gif ( 1 hour), Routing ( 1 hour ), Auth ( 1 hour )
+Jan 60 -> Jan 07: Shortcuts ( 1 Hour ), Improvements ( 30 min )
+Jan 08: Improvements ( 1 hour ), Unit testing (4 hours), Restyling ( 1 hour )  

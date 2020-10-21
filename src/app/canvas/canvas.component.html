@@ -1,0 +1,10 @@
+<div class="container">
+  <canvas #canvas (mouseup)="update()" (mousedown)="onDown($event)" class="canvas" width="{{pow()}}" height="{{pow()}}">
+
+  </canvas>
+
+  <div class="resize">
+    <span>Canvas size: <span id="size_value">{{ pow() }}x{{ pow() }}</span></span>
+    <input (change)="resize()" [(ngModel)]="size" type="range" min="2" max="9" step="1" value="7">
+  </div>
+</div>

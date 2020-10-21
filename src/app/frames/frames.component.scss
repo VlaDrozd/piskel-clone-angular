@@ -1,0 +1,95 @@
+.list {
+  width: 200px;
+  max-height: 70vh;
+  max-width: 100%;
+  border: solid 1px #ccc;
+  min-height: 60px;
+  display: block;
+  background: white;
+  border-radius: 4px;
+  overflow-y: scroll;
+}
+
+.box {
+  position: relative;
+  padding: 36px 10px 10px 10px;
+  border: 1px solid #ffee00;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: move;
+  background: #414141;
+  font-size: 14px;
+}
+
+.current {
+  background: #8f8e8e;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.box:last-child {
+  border: none;
+}
+
+.list.cdk-drop-list-dragging .box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.custom-placeholder {
+  background: #1e1e1e;
+  border: dotted 3px #ffee00;
+  height: 200px;
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.num {
+  position: absolute;
+  top: 8px;
+  left: 5px;
+}
+
+.delete {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+}
+
+.copy {
+  position: absolute;
+  top: 3px;
+  right: 43px;
+}
+
+.button {
+  padding: 5px;
+  background: initial;
+  color: #ffee00;
+  border: 2px solid #ffee00;
+  cursor: pointer;
+}
+.button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.add {
+  margin-top: 10px;
+  padding: 5px;
+  text-decoration: none;
+  border: 2px solid #ffee00;
+  color: #ffee00;
+}

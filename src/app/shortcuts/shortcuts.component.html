@@ -1,0 +1,6 @@
+<a class="back" routerLink="/main">Back</a>
+<ul>
+  <li class="shortcut" [class.changing]='changing == key' (click)="changeKey(key, instruments.shortcuts[key].instrument)"
+    *ngFor="let key of instruments.getkeys()">{{instruments.shortcuts[key].key}}
+    {{instruments.shortcuts[key].instrument}}</li>
+</ul>

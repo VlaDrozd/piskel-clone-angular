@@ -1,0 +1,16 @@
+.container {
+  max-width: 512px;
+}
+
+canvas {
+  width: 512px;
+  height: 512px;
+  border: 1px solid black;
+  image-rendering: pixelated;
+  border: 3px solid #ffee00;
+}
+
+.resize {
+  display: flex;
+  flex-flow: column;
+}
